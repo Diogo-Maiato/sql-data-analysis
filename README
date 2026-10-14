@@ -1,0 +1,107 @@
+# Projeto 2 — Análise de Vendas com SQL e Python
+
+## Sobre o Projeto
+
+Este projeto tem como objetivo analisar os dados de vendas de uma empresa fictícia, utilizando **SQL, SQLite e Python**.
+
+A análise foi realizada através de uma base de dados composta por informações sobre clientes, produtos, vendas e funcionários.
+
+O principal objetivo é identificar padrões de vendas, avaliar o desempenho comercial e obter informações úteis para apoiar a tomada de decisões.
+
+## Objetivos
+
+- Analisar o total de vendas e a quantidade de produtos vendidos.
+- Identificar os produtos mais vendidos e os que geram maior faturação.
+- Descobrir os clientes que mais gastaram e os que não realizaram compras.
+- Analisar a faturação por cidade e por mês.
+- Avaliar o desempenho dos funcionários.
+- Integrar consultas SQL com Python para apresentar os resultados.
+
+## Tecnologias Utilizadas
+
+- **Python** — Ligação à base de dados, execução das consultas e apresentação dos resultados.
+- **SQLite** — Armazenamento e gestão da base de dados.
+- **SQL** — Consulta, organização e análise dos dados.
+
+## Estrutura do Projeto
+
+sql_data_analysis/
+│
+├── data/
+│   └── empresa.db
+│
+├── queries/
+│   ├── 01_analise_geral.sql
+│   ├── 02_analise_produtos.sql
+│   ├── 03_analise_clientes.sql
+│   ├── 04_analise_cidades.sql
+│   ├── 05_analise_temporal.sql
+│   └── 06_analise_funcionarios.sql
+│
+├── main.py
+├── README.md
+└── .gitignore
+
+## Processo de Análise
+
+**1. Exploração da base de dados**
+
+Identificação das tabelas e respetivas informações: clientes, produtos, vendas e funcionários.
+
+**2. Criação das consultas SQL**
+
+Utilização de comandos como `SELECT`, `COUNT`, `SUM`, `AVG`, `GROUP BY`, `ORDER BY`, `INNER JOIN` e `LEFT JOIN` para responder às questões de análise.
+
+**3. Organização das consultas**
+
+Separação das consultas SQL em seis ficheiros, organizados por categoria, para facilitar a leitura e manutenção do projeto.
+
+**4. Integração com Python**
+
+Criação de uma função Python que lê os ficheiros SQL, executa as consultas na base de dados SQLite e recolhe os resultados.
+
+**5. Apresentação dos resultados**
+
+Organização dos resultados no terminal, permitindo consultar as análises de forma clara.
+
+## Principais Conclusões
+
+- Foram registadas **180 vendas**, correspondentes a **347 unidades vendidas**.
+- O produto mais vendido em quantidade foi o **Dock USB-C**, com 50 unidades.
+- O produto com maior faturação foi o **Portátil Pro 15**, com 40.995,90 €.
+- A cliente com maior faturação associada foi **Leonor Gomes**, com 8.117,80 €.
+- **Braga** foi a cidade com maior faturação, atingindo 27.329,40 €.
+- **Setembro de 2026** foi o mês com maior faturação, com 5.972,50 €.
+- **André Santos** foi o funcionário com maior faturação associada, totalizando 18.112,50 €.
+- Foram identificados dois clientes sem compras registadas.
+
+## O que Aprendi
+
+Durante o desenvolvimento deste projeto, aprofundei os meus conhecimentos em SQL e bases de dados relacionais.
+
+Aprendi a relacionar diferentes tabelas através de `JOIN`, a realizar cálculos e agrupamentos de dados e a organizar consultas SQL em ficheiros separados.
+
+Também desenvolvi competências na integração de SQL com Python, automatizando a execução das consultas e a apresentação dos resultados.
+
+Este projeto permitiu-me compreender melhor como utilizar dados para responder a questões de negócio.
+
+## Como Executar
+
+1. Ter o Python instalado.
+2. Descarregar ou clonar este repositório.
+3. Abrir a pasta do projeto no VS Code ou num terminal.
+4. Executar o ficheiro principal:
+
+```bash
+python main.py
+```
+
+Os resultados das análises serão apresentados no terminal.
+
+O projeto utiliza os módulos `sqlite3` e `pathlib`, incluídos na biblioteca padrão do Python.
+
+## Fonte dos Dados
+
+A base de dados utilizada neste projeto contém **dados fictícios**, criados para fins de prática de análise de dados.
+
+O projeto foi desenvolvido para consolidar conhecimentos de SQL, SQLite e Python e construir um portefólio na área de Análise de Dados.
