@@ -2,7 +2,7 @@ import sqlite3 as sql
 from pathlib import Path
 
 diretorio = Path(__file__).resolve().parent
-ficheiro = sql.connect("data/empresa.db")
+ficheiro = sql.connect(diretorio / "data" / "empresa.db")
 
 cursor = ficheiro.cursor()
 
